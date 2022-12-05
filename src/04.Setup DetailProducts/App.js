@@ -7,9 +7,6 @@ import Home from "./Pages/Home";
 import { Router } from "@reach/router";
 import Cart from "./Pages/Cart";
 import ProductDetails from "./Pages/ProductDetails";
-import SignIn from "./Pages/SignIn";
-import Register from "./Pages/Register";
-import MyAccount from "./Pages/MyAccount";
 
 function App() {
   const [theme] = useThemeHook();
@@ -21,9 +18,6 @@ function App() {
       <Header />
       <Router>
         <Home path="/" />
-        <MyAccount path="/my-account" />
-        <SignIn path="/sign-in" />
-        <Register path="/register" />
         <ProductDetails path="product-details/:productId" />
         <Cart path="/cart" />
       </Router>
